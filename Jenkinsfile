@@ -1,6 +1,6 @@
 #!/bin/groovy
-@Grab('org.yaml:snakeyaml:1.17')
 @Library('my-shared-lib') _
+@Grab('org.yaml:snakeyaml:1.20')
 import com.mdstech.pipeline.*
 
 orchestratePipeline {
