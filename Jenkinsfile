@@ -1,4 +1,5 @@
 #!/bin/groovy
+@Grab('org.yaml:snakeyaml:1.17')
 @Library('my-shared-lib') _
 import com.mdstech.pipeline.*
 
