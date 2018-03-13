@@ -1,0 +1,3 @@
+pipelineType: java
+runTests: true
+runScans: false
