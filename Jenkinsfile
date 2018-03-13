@@ -3,9 +3,9 @@
 import com.mdstech.pipeline.*
 
 orchestratePipeline {
-  metadata = "Json",
-  build = true,
-  test = true,
+  metadata = "Json"
+  build = true
+  test = true
   deploy = true
 }
 
