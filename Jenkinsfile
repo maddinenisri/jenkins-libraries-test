@@ -14,9 +14,9 @@ node {
     localEnvParams.add("JAVA_HOME=${ tool 'jdk-1.8' }")
     localEnvParams.add("PATH+MAVEN=${tool 'maven-3.3.9'}/bin:${env.JAVA_HOME}/bin")
 
-    def buildcondition=[:]
-    buildcondition.element="build.existingArtifactVersion"
-    buildcondition.condition="NOT_PRESENT"
+    def buildCondition=[:]
+    buildCondition.element="build.existingArtifactVersion"
+    buildCondition.condition="NOT_PRESENT"
 
     def buildCommands = []
     buildCommands.add("clean install")
@@ -24,7 +24,7 @@ node {
     def buildParams = [:]
     buildParams.currentDirectory="src"
     buildParams.localEnvParams = localEnvParams
-    buildParams.buildcondition=buildcondition
+    buildParams.buildCondition=buildCondition
     buildParams.buildCommands=buildCommands
 
     orchestratePipeline {
