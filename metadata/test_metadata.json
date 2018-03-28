@@ -1,0 +1,12 @@
+{
+  "build" : {
+    "existingArtifactVersion":"",
+    "repositories":[
+      {
+        "name":"src",
+        "url": "https://github.com/maddinenisri/servicenow.git",
+        "branchOrTagName": "master"
+      }
+    ]
+  }
+}
