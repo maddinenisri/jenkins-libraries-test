@@ -1,5 +1,6 @@
 pipelineType: java
 buildTool: Maven
+checkoutCredentialId: "Github Token"
 tools:
   jdk: jdk-1.8
   maven: maven-3.3.9
