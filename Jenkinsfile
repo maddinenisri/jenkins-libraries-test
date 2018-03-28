@@ -4,6 +4,12 @@
 import com.mdstech.pipeline.*
 
 node {
+    // Clean workspace before doing anything
+    deleteDir()
+
+    //Chekout pipeline repo
+    checkout scm
+
     def localEnvParams = []
     localEnvParams.add("JAVA_HOME=${ tool 'jdk-1.8' }")
     localEnvParams.add("PATH+MAVEN=${tool 'maven-3.3.9'}/bin:${env.JAVA_HOME}/bin")
