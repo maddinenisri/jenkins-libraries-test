@@ -28,7 +28,7 @@
     }],
     "build": {
       "workingDir": "sr_src",
-      "commands": ["clean install"]
+      "commands": ["versions:set -DnewVersion=2.0.0", "clean install"]
     },
     "postBuildStep":[{
 
