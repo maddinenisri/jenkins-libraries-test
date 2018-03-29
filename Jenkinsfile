@@ -11,7 +11,7 @@ node {
     checkout scm
 
     def localEnvParams = []
-    localEnvParams.add("JAVA_HOME=${ tool 'jdk-1.8' }")
+    localEnvParams.add("JAVA_HOME=${tool 'jdk-1.8'}")
     localEnvParams.add("PATH+MAVEN=${tool 'maven-3.3.9'}/bin:${env.JAVA_HOME}/bin")
 
     def buildCondition=[:]
@@ -29,7 +29,7 @@ node {
 
     orchestratePipeline {
       metadata = "metadata/test_metadata.json"
-      build = buildParams
+      build = "build_config.json"
       test = true
       deploy = true
     }

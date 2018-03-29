@@ -1,5 +1,6 @@
 {
-  "build" : {
+  "build" : [{
+    "type": "SN_BUILD",
     "existingArtifactVersion":"",
     "repositories":[
       {
@@ -8,5 +9,5 @@
         "branchOrTagName": "master"
       }
     ]
-  }
+  }]
 }
