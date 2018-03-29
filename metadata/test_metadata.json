@@ -9,5 +9,15 @@
         "branchOrTagName": "master"
       }
     ]
+  },{
+    "type": "SR_BUILD",
+    "existingArtifactVersion":"",
+    "repositories":[
+      {
+        "name":"src",
+        "url": "https://github.com/maddinenisri/simple-rest.git",
+        "branchOrTagName": "master"
+      }
+    ]
   }]
 }
