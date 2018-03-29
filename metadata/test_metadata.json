@@ -1,7 +1,7 @@
 {
   "build" : [{
     "type": "SN_BUILD",
-    "existingArtifactVersion":"",
+    "existingArtifactVersion":"1.0.0",
     "repositories":[
       {
         "name":"src",
