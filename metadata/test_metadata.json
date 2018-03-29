@@ -1,6 +1,6 @@
 {
   "build" : {
-    "existingArtifactVersion":"0.0.0-1",
+    "existingArtifactVersion":"",
     "repositories":[
       {
         "name":"src",
