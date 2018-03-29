@@ -4,7 +4,7 @@
     "existingArtifactVersion":"1.0.0",
     "repositories":[
       {
-        "name":"src",
+        "name":"sn_src",
         "url": "https://github.com/maddinenisri/servicenow.git",
         "branchOrTagName": "master"
       }
@@ -14,7 +14,7 @@
     "existingArtifactVersion":"",
     "repositories":[
       {
-        "name":"src",
+        "name":"sr_src",
         "url": "https://github.com/maddinenisri/simple-rest.git",
         "branchOrTagName": "master"
       }

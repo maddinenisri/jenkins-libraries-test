@@ -10,7 +10,7 @@
       "condition": "@empty@existingArtifactVersion@empty@"
     }],
     "build": {
-      "workingDir": "src",
+      "workingDir": "sn_src",
       "commands": ["clean install"]
     },
     "postBuildStep":[{
@@ -27,7 +27,7 @@
       "condition": "@empty@existingArtifactVersion@empty@"
     }],
     "build": {
-      "workingDir": "src",
+      "workingDir": "sr_src",
       "commands": ["clean install"]
     },
     "postBuildStep":[{
