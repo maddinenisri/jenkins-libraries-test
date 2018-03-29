@@ -5,13 +5,13 @@
       "JAVA_HOME=@tool@jdk-1.8@tool@",
       "PATH+MAVEN=@tool@maven-3.3.9@tool@/bin:@tool@jdk-1.8@tool@/bin"
     ],
-    "preBuildStep":[{
+    "buildConditions":[{
       "from": "metadata",
-      "condition": "@empty@build.existingArtifactVersion@empty@"
+      "condition": "@empty@existingArtifactVersion@empty@"
     }],
     "build": {
       "workingDir": "src",
-      "commands": "clean install"
+      "commands": ["clean install"]
     },
     "postBuildStep":[{
 
