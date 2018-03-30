@@ -29,7 +29,7 @@
     }],
     "build": {
       "workingDir": "sr_src",
-      "commands": ["versions:set -DnewVersion=2.0.0", "clean install"]
+      "commands": ["versions:set -DnewVersion=\$newVersion", "clean install"]
     },
     "postBuildStep":[{
 
