@@ -1,9 +1,9 @@
 repositories:
-  - tool: "Nexus"
-    nexusVersion: "nexus3",
-    protocol: "http",
-    nexusUrl: "mynexus:8081/nexus/content/repositories/myreleases",
-    repository: "myreleases",
-    credentialsId: "nexus"
-  - tool: "Artifactory"
-    credentialsId: "artifactory"
+  -  tool: "Nexus"
+     nexusVersion: "nexus3"
+     protocol: "http"
+     nexusUrl: "mynexus:8081/nexus/content/repositories/myreleases"
+     repository: "myreleases"
+     credentialsId: "nexus"
+  -  tool: "Artifactory"
+     credentialsId: "artifactory"
