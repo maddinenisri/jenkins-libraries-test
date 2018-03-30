@@ -55,6 +55,7 @@
     "scandefs": [{
       "type": "Sonar",
       "properties": {
+        "sonar.host.url": "http://sonarqube:9000",
         "sonar.projectKey": "simple_rest",
         "sonar.projectName": "Simple Rest Service",
         "sonar.projectVersion": "dev",
