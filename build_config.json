@@ -68,7 +68,7 @@
         "sonar.jacoco.itReportPath": "target/jacoco-it.exec",
         "sonar.java.binaries": "target/classes",
         "sonar.java.coveragePlugin": "jacoco",
-        "sonar.verbose": true
+        "sonar.verbose": false
       }
     }]
   }]
