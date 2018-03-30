@@ -53,7 +53,7 @@
       }
     }],
     "scandefs": [{
-      "type": "sonar",
+      "type": "Sonar",
       "properties": {
         "sonar.projectKey": "simple_rest",
         "sonar.projectName": "Simple Rest Service",

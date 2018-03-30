@@ -14,7 +14,7 @@
     "existingArtifactVersion":"",
     "artifactUpload": true,
     "scans":[{
-      "type" : "sonar",
+      "type" : "Sonar",
       "scan" : true
     }],
     "repositories":[
