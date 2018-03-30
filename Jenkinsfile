@@ -13,6 +13,7 @@ node {
     orchestratePipeline {
       metadata = "metadata/test_metadata.json"
       build = "build_config.json"
+      artifactory = "artifactory_config.yaml"
       test = true
       deploy = true
     }
