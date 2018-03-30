@@ -20,7 +20,7 @@
     "type":"SR_BUILD",
     "envs":[
       "JAVA_HOME=@tool@jdk-1.8@tool@",
-      "PATH+MAVEN=@tool@maven-3.3.9@tool@/bin:@tool@jdk-1.8@tool@/bin"
+      "PATH+MAVEN=@tool@maven-3.3.9@tool@/bin:@tool@jdk-1.8@tool@/bin",
       "newVersion=@env@BUILD_NUMBER@env@"
     ],
     "buildConditions":[{
