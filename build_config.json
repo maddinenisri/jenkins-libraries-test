@@ -49,7 +49,7 @@
       "type": "war",
       "file": {
         "name":"@artifactId@-@version@.@type@",
-        "path":"target"
+        "path":"sr_src/target"
       }
     }]
   }]
