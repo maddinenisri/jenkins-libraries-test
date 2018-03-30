@@ -12,6 +12,7 @@
   },{
     "type": "SR_BUILD",
     "existingArtifactVersion":"",
+    "artifactUpload": true,
     "repositories":[
       {
         "name":"sr_src",

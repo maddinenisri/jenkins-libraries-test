@@ -1,5 +1,6 @@
 pipelineType: java
 buildTool: Maven
+repositoryTool: Nexus
 checkoutCredentialId: "Github Token"
 tools:
   jdk: jdk-1.8

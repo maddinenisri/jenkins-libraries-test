@@ -31,8 +31,26 @@
       "workingDir": "sr_src",
       "commands": ["versions:set -DnewVersion=\$newVersion", "clean install"]
     },
-    "postBuildStep":[{
-
+    "postBuild":[{
+      "task": {
+        "action": "update",
+        "element": "existingArtifactVersion",
+        "to": "metadata",
+        "value": "@env@newVersion@env@"
+      }
+    }],
+    "artifacts": [{
+      "groupId": "com.mdstech.sample",
+      "artifactId": "simple-rest",
+      "version": {
+        "from": "metadata",
+        "element": "existingArtifactVersion"
+      },
+      "type": "war",
+      "file": {
+        "name":"@artifactId@-@version@.@type@",
+        "path":"target"
+      }
     }]
   }]
 }
