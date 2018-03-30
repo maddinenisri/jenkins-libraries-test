@@ -51,6 +51,25 @@
         "name":"@artifactId@-@version@.@type@",
         "path":"sr_src/target"
       }
+    }],
+    "scans": [{
+      "type": "sonar",
+      "properties": {
+        "sonar.projectKey": "simple_rest",
+        "sonar.projectName": "Simple Rest Service",
+        "sonar.projectVersion": "dev",
+        "sonar.forceAnalysis": true,
+        "sonar.sourceEncoding": "ISO-8859-15",
+        "maven.test.failure.ignore": true,
+        "sonar.sources": ".",
+        "sonar.junit.reportsPath": "**/target/surefire-reports",
+        "sonar.surefire.reportsPath": "**/target/surefire-reports",
+        "sonar.jacoco.reportPath": "target/jacoco.exec",
+        "sonar.jacoco.itReportPath": "target/jacoco-it.exec",
+        "sonar.java.binaries": "target/classes",
+        "sonar.java.coveragePlugin": "jacoco",
+        "sonar.verbose": true
+      }
     }]
   }]
 }

@@ -13,6 +13,10 @@
     "type": "SR_BUILD",
     "existingArtifactVersion":"",
     "artifactUpload": true,
+    "scans":[{
+      "type" : "sonar",
+      "scan" : true
+    }],
     "repositories":[
       {
         "name":"sr_src",
