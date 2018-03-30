@@ -2,6 +2,8 @@ pipelineType: java
 buildTool: Maven
 repositoryTool: Nexus
 checkoutCredentialId: "Github Token"
+sonarRunner: SonarQube_Scanner_2.8
+sonarServer: mysonarserver
 tools:
   jdk: jdk-1.8
   maven: maven-3.3.9
