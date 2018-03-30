@@ -59,7 +59,7 @@
         "sonar.login": "admin",
         "sonar.password": "admin",
         "sonar.projectKey": "simple_rest",
-        "sonar.projectName": "Simple Rest Service",
+        "sonar.projectName": "SimpleRestService",
         "sonar.projectVersion": "dev",
         "sonar.forceAnalysis": true,
         "sonar.sourceEncoding": "ISO-8859-15",
