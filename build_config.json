@@ -21,6 +21,7 @@
     "envs":[
       "JAVA_HOME=@tool@jdk-1.8@tool@",
       "PATH+MAVEN=@tool@maven-3.3.9@tool@/bin:@tool@jdk-1.8@tool@/bin"
+      "newVersion=@env@BUILD_NUMBER@env@"
     ],
     "buildConditions":[{
       "from": "metadata",
@@ -28,7 +29,7 @@
     }],
     "build": {
       "workingDir": "sr_src",
-      "commands": ["versions:set -DnewVersion=2.0.0", "clean install"]
+      "commands": ["versions:set -DnewVersion=\"${env.newVersion}\"", "clean install"]
     },
     "postBuildStep":[{
 
