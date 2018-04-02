@@ -10,7 +10,7 @@ node {
     //Chekout pipeline repo
     checkout scm
 
-    FlowOrchestrator.processStages
+    FlowOrchestrator..caution('world')
 
 
 //    orchestratePipeline {
