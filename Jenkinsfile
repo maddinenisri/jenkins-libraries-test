@@ -10,11 +10,14 @@ node {
     //Chekout pipeline repo
     checkout scm
 
-    orchestratePipeline {
-      metadata = "metadata/test_metadata.json"
-      build = "build_config.json"
-      artifactory = "artifactory_config.yaml"
-      test = true
-      deploy = true
-    }
+    FlowOrchestrator.processStages()
+
+
+//    orchestratePipeline {
+//      metadata = "metadata/test_metadata.json"
+//      build = "build_config.json"
+//      artifactory = "artifactory_config.yaml"
+//      test = true
+//      deploy = true
+//    }
 }

@@ -10,3 +10,22 @@ tools:
   sonar: SonarQube_Scanner_2.8
 runTests: true
 runScans: false
+stages:
+  stage:
+    name: "Initialize Pipeline"
+    tasks:
+      task: loadMetadata
+  stage:
+    name: Build
+    tasks:
+      task: mavenBuildTask
+  stage:
+    name: "Upload Artifacts"
+    tasks:
+      task: uploadArtifactTask
+  stage:
+    name: "Scan Code"
+    tasks:
+      task: sonarTask
+
+
