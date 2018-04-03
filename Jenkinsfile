@@ -12,6 +12,7 @@ node {
 
     pipelineFlow {
         definition = "pipeline.yaml"
+        metadata = "metadata/test_metadata.json"
     }
 
 
