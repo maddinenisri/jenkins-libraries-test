@@ -5,14 +5,11 @@ checkoutCredentialId: "Github Token"
 sonarRunner: SonarQube_Scanner_2.8
 sonarServer: mysonarserver
 tools:
-  tool:
-    name: jdk
+  - name: jdk
     value: jdk-1.8
-  tool:
-    name: maven
+  - name: maven
     value: maven-3.3.9
-  tool:
-    name: sonar
+  - name: sonar
     value: SonarQube_Scanner_2.8
 runTests: true
 runScans: false
