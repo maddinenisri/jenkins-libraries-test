@@ -14,20 +14,16 @@ tools:
 runTests: true
 runScans: false
 stages:
-  stage:
-    name: "Initialize Pipeline"
+  - name: "Initialize Pipeline"
     tasks:
       task: loadMetadata
-  stage:
-    name: Build
+  - name: Build
     tasks:
       task: mavenBuildTask
-  stage:
-    name: "Upload Artifacts"
+  - name: "Upload Artifacts"
     tasks:
       task: uploadArtifactTask
-  stage:
-    name: "Scan Code"
+  - name: "Scan Code"
     tasks:
       task: sonarTask
 
