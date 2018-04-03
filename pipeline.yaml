@@ -4,6 +4,13 @@ repositoryTool: Nexus
 checkoutCredentialId: "Github Token"
 sonarRunner: SonarQube_Scanner_2.8
 sonarServer: mysonarserver
+resources:
+  - name: repositoryConfig
+    path: artifactory_config.yaml
+    type: yaml
+  - name: buildConfig
+    path: build_config.json
+    type: json
 tools:
   - name: jdk
     value: jdk-1.8
@@ -11,20 +18,20 @@ tools:
     value: maven-3.3.9
   - name: sonar
     value: SonarQube_Scanner_2.8
-runTests: true
-runScans: false
 stages:
   - name: "Initialize Pipeline"
     tasks:
-      task: loadMetadata
+      - type: task
+        name: loadMetadata
   - name: Build
     tasks:
-      task: mavenBuildTask
+      - type: task
+        name: mavenBuildTask
   - name: "Upload Artifacts"
     tasks:
-      task: uploadArtifactTask
+      - type: task
+        name: uploadArtifactTask
   - name: "Scan Code"
     tasks:
-      task: sonarTask
-
-
+      - type: task
+        name: sonarTask
