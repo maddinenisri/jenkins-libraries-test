@@ -10,7 +10,9 @@ node {
     //Chekout pipeline repo
     checkout scm
 
-    FlowOrchestrator.caution('world')
+    pipelineFlow {
+        definition = "pipeline.yaml"
+    }
 
 
 //    orchestratePipeline {
