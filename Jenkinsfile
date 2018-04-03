@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-@Library('my-shared-lib') _
+@Library('my-shared-lib@feature/std_pipeline_bus_approach') _
 //@Grab('org.yaml:snakeyaml:1.20')
 import com.mdstech.pipeline.*
 
