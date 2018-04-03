@@ -1,3 +1,4 @@
+repositoryTool: Nexus
 repositories:
   -  tool: "Nexus"
      nexusVersion: "nexus3"

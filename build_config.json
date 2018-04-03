@@ -1,4 +1,5 @@
 {
+  "buildTool": "Maven",
   "types":[{
     "type":"SN_BUILD",
     "envs":[
