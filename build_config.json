@@ -39,6 +39,13 @@
         "to": "metadata",
         "value": "@env@newVersion@env@"
       }
+    },{
+      "task": {
+        "action": "update",
+        "element": "newVersion",
+        "to": "pipeline",
+        "value": "@env@newVersion@env@"
+      }
     }],
     "artifacts": [{
       "groupId": "com.mdstech.sample",
