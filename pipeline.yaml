@@ -11,6 +11,9 @@ resources:
   - name: buildConfig
     path: build_config.json
     type: json
+  - name: deployConfig
+    path: deploy_config.yaml
+    type: yaml
 tools:
   - name: jdk
     value: jdk-1.8
@@ -35,3 +38,7 @@ stages:
     tasks:
       - type: task
         name: sonarTask
+  - name: "Deploy"
+    tasks:
+      - type: task
+        name: deployTask

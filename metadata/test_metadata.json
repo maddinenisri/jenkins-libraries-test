@@ -24,5 +24,12 @@
         "branchOrTagName": "master"
       }
     ]
+  }],
+  "deploy": [{
+    "type": "SR_BUILD",
+    "envs": [{
+      "name": "dev01",
+      "label": "dev"
+    }]
   }]
 }
