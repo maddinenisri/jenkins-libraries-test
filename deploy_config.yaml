@@ -3,13 +3,13 @@ types:
   - type: SR_BUILD
     inventory: ansible_scripts/inventory
     environmentVariables:
-      - name: JAVA_HOME
-        value: @tool@jdk-1.8@tool@
-      - name: PATH+MAVEN
-        value: @tool@maven-3.3.9@tool@/bin:@tool@jdk-1.8@tool@/bin
-      - name: newVersion
-        value: 1.0.0-@env@BUILD_NUMBER@env@
+      - name: "JAVA_HOME"
+        value: "@tool@jdk-1.8@tool@"
+      - name: "PATH+MAVEN"
+        value: "@tool@maven-3.3.9@tool@/bin:@tool@jdk-1.8@tool@/bin"
+      - name: "newVersion"
+        value: "1.0.0-@env@BUILD_NUMBER@env@"
     targets:
-      - name: dev01
-        server: ansible_target
-        user: ubuntu
+      - name: "dev01"
+        server: "ansible_target"
+        user: "ubuntu"
