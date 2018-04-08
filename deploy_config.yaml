@@ -1,4 +1,4 @@
-deployCM: ansible
+deployTool: ansible
 types:
   - type: SR_BUILD
     inventory: ansible_scripts/inventory
