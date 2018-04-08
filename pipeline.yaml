@@ -42,3 +42,4 @@ stages:
     tasks:
       - type: task
         name: deployTask
+        label: dev
