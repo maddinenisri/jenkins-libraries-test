@@ -27,9 +27,12 @@
   }],
   "deploy": [{
     "type": "SR_BUILD",
-    "envs": [{
+    "targets": [{
       "name": "dev01",
       "label": "dev"
+    },{
+      "name": "sit01",
+      "label": "sit"
     }]
   }]
 }
