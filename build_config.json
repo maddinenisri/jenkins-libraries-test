@@ -58,7 +58,7 @@
       "properties": {
         "sonar.projectKey": "simple_rest",
         "sonar.projectName": "SimpleRestService",
-        "sonar.projectVersion": "dev",
+        "sonar.projectVersion": "@env@newVersion@env@",
         "sonar.forceAnalysis": true,
         "sonar.sourceEncoding": "ISO-8859-15",
         "maven.test.failure.ignore": true,
