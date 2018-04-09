@@ -43,3 +43,8 @@ stages:
       - type: task
         name: deployTask
         label: dev
+  - name: "Deploy to SIT"
+    tasks:
+      - type: task
+        name: deployTask
+        label: sit
