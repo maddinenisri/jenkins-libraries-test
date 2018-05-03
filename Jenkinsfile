@@ -28,7 +28,7 @@ node {
 
     customFlow {
         postBuild = postBuildScript
-        preStage = preStageScript
+        //preStage = preStageScript
         postStage = postStageScript
     }
 }
