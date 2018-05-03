@@ -12,6 +12,8 @@ node {
     checkout scm
 
     customFlow {
-        postBuild = "java -version"
+        postBuild = {
+            steps.sh "java -version"
+        }
     }
 }
