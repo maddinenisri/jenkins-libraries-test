@@ -12,7 +12,8 @@ node {
     checkout scm
 
     def postBuildScript = {
-        sh "java -version"
+        def sample = load("sample.groovy")
+        sample.testPipelineExtension()
     }
 
     customFlow {
