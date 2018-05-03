@@ -11,9 +11,11 @@ node {
     //Chekout pipeline repo
     checkout scm
 
+    def postBuildScript = {
+        steps.sh "java -version"
+    }
+
     customFlow {
-        postBuild = {
-            steps.sh "java -version"
-        }
+        postBuild = postBuildScript
     }
 }
