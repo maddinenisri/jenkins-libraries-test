@@ -12,7 +12,7 @@ node {
     checkout scm
 
     def postBuildScript = {
-        steps.sh "java -version"
+        sh "java -version"
     }
 
     customFlow {
