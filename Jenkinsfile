@@ -16,6 +16,9 @@ node {
         sample.testPipelineExtension()
     }
 
+    def postStage = {
+        echo "======== Competed stage ${stageInfo.name} =========="
+    }
     customFlow {
         postBuild = postBuildScript
     }
