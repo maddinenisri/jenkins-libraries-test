@@ -11,8 +11,7 @@ node {
     //Chekout pipeline repo
     checkout scm
 
-    pipelineFlow {
-        definition = "pipeline.yaml"
-        metadata = "metadata/test_metadata.json"
+    customFlow {
+        postBuild = "java -version"
     }
 }
