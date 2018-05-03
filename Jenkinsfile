@@ -17,7 +17,7 @@ node {
     }
 
     def postStageScript = {
-        echo "======== Competed stage END =========="
+        echo "======== Competed stage END -- ${stageInfo.name} =========="
     }
 
     customFlow {
