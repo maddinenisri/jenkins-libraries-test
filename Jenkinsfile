@@ -17,11 +17,18 @@ node {
     }
 
     def postStageScript = {
-        echo "======== Competed stage END -- ${env.stageName} =========="
+        def sname = env.stageName
+        echo "======== Completed stage END -- ${env.stageName} =========="
+    }
+
+    def preStageScript = {
+        def sname = env.stageName
+        echo "======== Start stage BEGIN -- ${env.stageName} =========="
     }
 
     customFlow {
         postBuild = postBuildScript
+        preStage = preStageScript
         postStage = postStageScript
     }
 }
