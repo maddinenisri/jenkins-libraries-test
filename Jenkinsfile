@@ -7,7 +7,7 @@ import com.mdstech.pipeline.*
 node {
     // Clean workspace before doing anything
     deleteDir()
-    varShare = "sample"
+    def varShare = "sample"
     //Chekout pipeline repo
     checkout scm
 
